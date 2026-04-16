@@ -14,7 +14,7 @@ const firebaseConfig = {
   appId: "1:945092483763:web:6d62898f28e4096d7b2ec6"
 };
 
-// ניקוי appId מלוכסנים למניעת שגיאות בנתיב Firebase
+// Clean appId for Firebase path segments
 const rawAppId = typeof __app_id !== 'undefined' ? __app_id : "mi-mevi-ma-prod";
 const appId = rawAppId.replace(/\//g, '_');
 
